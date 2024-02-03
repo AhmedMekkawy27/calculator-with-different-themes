@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-weight: 700;
+}
+.page1{
+    background-color: #3b4664;
+}
+.page2{
+    background-color: #e6e6e6;
+}
+.page3{
+    background-color: #17062a;
+}
+.container{
+    height: 750px;
+}
+form input{
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-size: 50px;
+    text-align: end;
+    margin-bottom: 40px;
+}
+.input1{
+    background-color:#181f32;
+    color:white;
+}
+.input2{
+    background-color:#eeeeee;
+    color:#3d3d31;
+}
+.input3{
+    background-color:#1e0836;
+    color:#ffeb3f;
+}
+.btnContainer{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(5 , 60px);
+    grid-template-columns: repeat(4 , 90px);
+    justify-content: center;
+    gap: 30px;
+    padding: 35px 0 0 0;
+    align-items: center;
+}
+.btnCont1{
+    background-color: #252d44
+}
+.btnCont2{
+    background-color: #d3cdcd
+}
+.btnCont3{
+    background-color: #1e0836
+}
+.btnContainer .btn{
+    border-radius: 10px;
+    padding: 5px 0;
+    height: 60px;
+    
+}
+.btn1{
+    background-color: #eae3db;
+    color: #3b4053;
+    box-shadow: 0px 4px 0px 0px #b6a49a;
+    font-size: 32px;
+}
+.btn1:hover{
+    background-color: white;
+}
+.btn2{
+    background-color: #e5e4e0;
+    color: #3a3a30;
+    box-shadow: 0px 4px 0px 0px #b6a49a;
+    font-size: 32px;
+}
+.btn2:hover{
+    background-color: white;
+}
+.btn3{
+    background-color: #331b4d;
+    color:#ffeb3f;
+    box-shadow: 0px 4px 0px 0px #851c9d;
+    font-size: 32px;
+}
+.sbtn1{
+    background-color: #647299;
+    color: white;
+    box-shadow: 0px 4px 0px 0px #414e71;
+    font-size: 25px;
+}
+.sbtn1:hover{
+    background-color: #a2b3e1;
+}
+.sbtn2{
+    background-color: #388187;
+    color: white;
+    box-shadow: 0px 4px 0px 0px #1d5b66;
+    font-size: 25px;
+}
+.sbtn2:hover{
+    background-color: #62b5bd;
+}
+.sbtn3{
+    background-color: #56077c;
+    color: white;
+    box-shadow: 0px 4px 0px 0px #bf16f5;
+    font-size: 25px;
+}
+.sbtn3:hover{
+    background-color: #8631b0;
+}
+.ebtn1{
+    background-color: #d13f30;
+    color: white;
+    box-shadow: 0px 4px 0px 0px #96271c;
+    font-size: 25px;
+}
+.ebtn1:hover{
+    background-color: #f96c5b;
+}
+.ebtn2{
+    background-color: #c85401;
+    color: white;
+    box-shadow: 0px 4px 0px 0px #893a02;
+    font-size: 25px;
+}
+.ebtn2:hover{
+    background-color: #ff8b38;
+}
+.ebtn3{
+    background-color: #00decf;
+    color: black;
+    box-shadow: 0px 4px 0px 0px #6ef7ef;
+    font-size: 25px;
+}
+.ebtn3:hover{
+    background-color: #94fff9;
+}
+
+  /* Hide default HTML checkbox */
+  /* The slider */
+  .switch {
+    font-size: 17px;
+    position: relative;
+    width: 5em;
+    height: 2em;
+    cursor: pointer;
+    background: #252c46;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    left: 83%;
+    bottom: 5%;
+  }
+  .slider {
+    position: absolute;
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: #ca4330;
+    border-radius: 50px;
+    box-shadow: 0 0px 20px rgba(0,0,0,0.4);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .slider::before{
+    content: "Theme";
+    position: relative;
+    left: -500%;
+    color: white;
+  }
+  .switch .slider2 {
+      transform: translateX(1.5em);
+      background-color: #c65600;
+    }
+    .slider2::before{
+      content: "Theme";
+      position: relative;
+      left: -500%;
+      color: #32322a;
+    }
+    .switch .slider3 {
+        transform: translateX(3em);
+        background-color: #00d9d1;
+    }
+    .slider3::before{
+      content: "Theme";
+      position: relative;
+      left: -500%;
+      color: #fed943;
+    }
+    .num1{
+        color: white;
+    }
+    .num2{
+        color: #32322a;
+    }
+    .num3{
+        color: #fed943;
+    }
+  @media(max-width: 375px){
+    .btnContainer{
+        width: 325px;
+        gap: 15px;
+        height: 420px;
+        margin-top: -15px;
+        grid-template-rows: repeat(5 , 65px);
+        grid-template-columns: repeat(4 , 60px);
+        padding: 15px 0;
+    }
+    .btnContainer .btn{
+        padding: 0;
+        height: 55px;
+    }
+    form input{
+        width: 325px;
+        height: 100px;
+    }
+  }
