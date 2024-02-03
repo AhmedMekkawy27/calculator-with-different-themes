@@ -228,3 +228,22 @@ form input{
         height: 100px;
     }
   }
+  @media(min-width: 376px) and (max-width: 505px){
+    form input{
+        width: 380px;
+        height: 100px;
+    }
+    .btnContainer{
+        width: 380px;
+        gap: 20px;
+        height: 460px;
+        margin-top: -15px;
+        grid-template-rows: repeat(5 , 65px);
+        grid-template-columns: repeat(4 , 65px);
+        padding: 25px 0;
+    }
+    .switch{
+        left: 77%;
+    }
+
+  }
