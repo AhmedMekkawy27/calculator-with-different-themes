@@ -3,8 +3,6 @@ export default function Switch({count, setCount}){
         setCount(count+1)
         count == 3 && setCount(1)
     }
-
-    console.log(count)
     return(
         <div className="switch" onClick={handleCounter}>
             <div className="themeNumber absolute bottom-8">

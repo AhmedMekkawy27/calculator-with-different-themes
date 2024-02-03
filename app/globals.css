@@ -26,9 +26,14 @@ form input{
     height: 150px;
     border-radius: 10px;
     padding: 20px 30px;
-    font-size: 50px;
     text-align: end;
     margin-bottom: 40px;
+}
+.size-sm{
+    font-size: 30px;
+}
+.size-lg{
+    font-size: 50px;
 }
 .input1{
     background-color:#181f32;
