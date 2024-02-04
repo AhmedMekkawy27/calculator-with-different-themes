@@ -12,7 +12,7 @@ export default function Buttons({count, setCount}){
         setValue("")
     }
     function handleEval(){
-        setValue(Number(eval(value)).toLocaleString())
+        setValue(Number(eval(value)).toString())
     }
     let handleDigit = (e) => {
         setValue(oldValue => oldValue + e.target.value)
